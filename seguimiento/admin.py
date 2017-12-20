@@ -22,8 +22,8 @@ class ReportesInLine(admin.TabularInline):
 class ModuloAdmin(admin.ModelAdmin):
     list_display = (
         'nombre',
-        'porcentaje_avance',
         'autor',
+        'porcentaje_avance',
         '_cantidad_contactos'
    )
     list_select_related = (

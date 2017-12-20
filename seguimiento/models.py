@@ -66,7 +66,7 @@ class Reporte(models.Model):
     fuente = models.CharField(max_length=200)
     descripcion = models.TextField()
     observaciones = models.TextField(null=True, blank=True)
-    archivo = models.FileField(null=True, blank=True)
+    archivo = models.FileField(upload_to='_archivos', null=True, blank=True)
 
     modulo = models.ForeignKey(Modulo, related_name="reportes", on_delete=models.PROTECT, null=True, blank=True)
 
