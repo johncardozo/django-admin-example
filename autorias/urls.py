@@ -21,3 +21,8 @@ urlpatterns = [
     path('seguimiento/', include('seguimiento.urls')),
     path('admin/', admin.site.urls),
 ]
+
+# Modificación del sitio admin
+admin.site.site_header = 'Seguimiento de Autorías'
+admin.site.site_title = 'Autorías'
+admin.site.index_title = 'Administración'
