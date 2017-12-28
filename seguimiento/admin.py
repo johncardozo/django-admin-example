@@ -23,6 +23,8 @@ class ModuloAdmin(admin.ModelAdmin):
     list_display = (
         'nombre',
         'autor',
+        'asesor',
+        'par',
         'porcentaje_avance',
         '_cantidad_contactos'
    )
